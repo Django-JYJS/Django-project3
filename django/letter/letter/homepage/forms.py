@@ -2,6 +2,6 @@ from django import forms
 
 class LetterForm(forms.Form):
     story = forms.CharField(
-        widget=forms.Textarea(attrs={'placeholder': '사연을 여기에 작성하세요.', 'rows': 4, 'cols': 50}),
+        widget=forms.Textarea(attrs={'placeholder': '군 생활중 고충이나 건의사항을 여기 적어주세요.', 'rows': 20, 'cols': 120}),
         required=True
     )

@@ -1,7 +1,6 @@
-{% extends "base_generic.html" %}
 
 {% block content %}
-    <h1>마음의편지 홈페이지</h1>
-    <p>마음의편지 홈페이지에 온것을 환영합니다.</p>
+    <h1>마음의 편지함</h1>
+    <p>군 생활중 고충이나 건의사항이 있는 경우 작성버튼을 눌러 작성해주시기 바랍니다.</p>
     <button onclick="location.href='{% url 'letter_view' %}'">-마음의 편지 작성-</button>
 {% endblock %}
