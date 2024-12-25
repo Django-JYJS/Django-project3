@@ -6,8 +6,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #4b5320;  /* 군용 그린 색상 */
-    background-image: url("{% static 'letter/images/camo-background.jpg' %}"); /* 군대 텍스처 배경 이미지 */
+    background-color: #4b5320;  
     background-size: cover;
     background-position: center;
 }
@@ -16,7 +15,7 @@ body {
 .container {
     text-align: center;
     padding: 30px;
-    background-color: #40490d; /* 투명한 배경 */
+    background-color: #40490d;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 80%;
@@ -27,61 +26,54 @@ body {
     align-items: center;
 }
 
-/* 제목 스타일 */
+
 h1 {
     font-size: 2.5em;
     color: #fff;
     margin-bottom: 20px;
-    font-family: 'Courier New', Courier, monospace; /* 군대 느낌의 폰트 */
-    text-align: center;  /* 제목을 중앙 정렬 */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;  
 }
 
-/* 에러 메시지 스타일 */
-p {
-    color: red;
-    font-size: 1.2em;
-}
 
-/* 버튼 스타일 */
+
 input[type="submit"] {
-    background-color: #3b5c3b; /* 군용 그린 색상 */
-    border: 2px solid #2e4a2e; /* 어두운 군용 그린 색상 */
-    color: white;
+    background-color: #3b5c3b; 
+    border: 2px solid #2e4a2e; 
     padding: 15px 30px;
     font-size: 1.5em;
     cursor: pointer;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, transform 0.2s ease;
-    margin-top: 20px;  /* 버튼과 입력 필드 사이의 간격 */
+    margin-top: 20px;  
 }
 
 input[type="submit"]:hover {
-    background-color: #2e4a2e; /* 어두운 군용 그린 색상 */
-    transform: scale(1.05); /* 버튼 크기 살짝 키우기 */
+    background-color: #2e4a2e; 
+    transform: scale(1.05); 
 }
 
 input[type="submit"]:active {
-    background-color: #1e3d1e; /* 클릭 시 더 어두운 군용 그린 */
+    background-color: #1e3d1e; 
 }
 
-/* 입력 필드 스타일 */
+
 input[type="text"], textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     font-size: 1.2em;
-    border: 2px solid #3b5c3b; /* 군용 그린 색상 */
+    border: 2px solid #3b5c3b; 
     border-radius: 5px;
     background-color: #f0f0f0;
     transition: border-color 0.3s ease;
 }
 
 input[type="text"]:focus, textarea:focus {
-    border-color: #2e4a2e; /* 어두운 군용 그린 색상 */
+    border-color: #2e4a2e; 
 }
 
-/* 숨겨진 next 필드 */
 input[type="hidden"] {
     display: none;
 }
