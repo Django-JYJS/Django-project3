@@ -1,6 +1,13 @@
+{% load static %}  <!-- static 태그 로드 -->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/finish.css' %}">
+</head>
+
 
 {% block content %}
-<h1>완료되었습니다!</h1>
-<p>사연이 성공적으로 제출되었습니다.</p>
-<a href="/">홈으로 돌아가기</a>
+<div class="container">
+    <h1>완료되었습니다!</h1>
+    <button class="go-home-button" onclick="window.location.href='/'">홈으로 돌아가기</button>
+</div>
 {% endblock %}

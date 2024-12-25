@@ -1,6 +1,16 @@
+{% load static %}  <!-- static 태그 로드 -->
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
 
 {% block content %}
-    <h1>마음의 편지함</h1>
-    <p>군 생활중 고충이나 건의사항이 있는 경우 작성버튼을 눌러 작성해주시기 바랍니다.</p>
-    <button onclick="location.href='{% url 'letter_view' %}'">-마음의 편지 작성-</button>
+    <div class="container">
+        <h1 class="title">마음의 편지함</h1>
+        <p class="description">군 생활중 고충이나 건의사항이 있는 경우 작성버튼을 눌러 작성해주시기 바랍니다.</p>
+        <button class="write-button" onclick="location.href='{% url 'letter_view' %}'">
+            <img src="{% static 'letter/images/Mailbox.png' %}" alt="Mailbox" class="button-image">
+            마음의 편지 작성 
+        </button>
+    </div>
 {% endblock %}

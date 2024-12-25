@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4b5320;  /* 군용 그린 색상 */
+    background-size: cover;
+    background-position: center;
+}
+
+/* 컨테이너 스타일 */
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);  /* 투명한 배경 */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 600px;
+}
+
+/* 제목 스타일 */
+h1 {
+    font-size: 2.5em;
+    color: #030303;
+    margin-bottom: 30px;  /* 간격 추가 */
+    font-family: 'Courier New', Courier, monospace;  /* 군대 느낌의 폰트 */
+    text-align: center;
+}
+
+
+
+/* 홈으로 돌아가기 버튼 스타일 */
+.go-home-button {
+    font-size: 1.5em;
+    color: white;
+    background-color: #3b5c3b;  /* 군용 그린 색상 */
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.go-home-button:hover {
+    background-color: #2e4a2e;  /* 어두운 군용 그린 색상 */
+    transform: scale(1.05);  /* 버튼 크기 살짝 키우기 */
+}
+
+.go-home-button:active {
+    background-color: #1e3d1e;  /* 클릭 시 더 어두운 군용 그린 */
+}
