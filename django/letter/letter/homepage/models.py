@@ -4,7 +4,7 @@ from django.db import models
 
 from django.urls import reverse
 
-class mail(models.Model):
+class Mail(models.Model):
     detail = models.TextField(max_length=10000, help_text="내용을 입력해주세요")
 
     def __str__(self):
