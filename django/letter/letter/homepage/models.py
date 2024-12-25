@@ -4,7 +4,7 @@ from django.db import models
 
 from django.urls import reverse
 
-class Mail(models.Model):
+class mail(models.Model):
     title = models.CharField(max_length=200) #제목
     name = models.ForeignKey('Author', on_delete=models.SET_NULL, null=True)
 
@@ -33,3 +33,4 @@ class Author(models.Model):
         return reverse('author-detail',args=[str(self.id)])
     def __str__(self):
         return f'{self.last_name},{self.first_name}'
+
