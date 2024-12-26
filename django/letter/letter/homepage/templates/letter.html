@@ -1,23 +1,21 @@
-{% load static %}  <!-- static 태그 로드 --> 
-<head> <link rel="stylesheet" type="text/css" href="{% static 'css/letter.css' %}"> </head>
+{% load static %}
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/letter.css' %}">
+</head>
 
 {% block content %}
     <div class="container">
         <h1>군생활중 고충이나 건의사항을 적어주세요.</h1>
 
-        {% if form.errors %}
-            <p>내용이 없습니다. 사연을 써주세요.</p>
+        {% if error %}
+            <p style="color: red;">{{ error }}</p> 
         {% endif %}
 
-        <form method="post" action="{% url 'finish' %}">
+        <form method="post" action="{% url 'letter_view' %}">
             {% csrf_token %}
-            <div>
-                {{ form.story }}  <!-- form.story를 렌더링 -->
-            </div>
-
+            <textarea name="story" rows="20" cols="100" placeholder="내용을 입력하세요"></textarea>
             <div>
                 <input type="submit" value="제출"/>
-                <input type="hidden" name="next" value="{{ next }}"/>
             </div>
         </form>
     </div>

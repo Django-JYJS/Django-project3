@@ -4,7 +4,7 @@ from homepage import views
 from . import views
 urlpatterns =[  
     path('homepage/', views.homepage_view, name='homepage'),
-    path('letter/', views.letter_view, name='letter_view'),
+    path('letter/', views.letter_view, name='letter_view'),  # 작성 페이지
     path('',views.index, name='index'),
     path('admin/', admin.site.urls),
     path('letter/finish/', views.finish_view, name ='finish'),
